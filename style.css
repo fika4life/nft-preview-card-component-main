@@ -12,10 +12,12 @@ body {
   align-items: center;
 }
 
-p {
+p,
+.card-author a {
   font-size: 18px;
   font-weight: 300;
   color: hsl(215, 51%, 70%);
+  text-decoration: none;
 }
 
 .card {
@@ -33,16 +35,24 @@ p {
   width: 100%;
   border-radius: 6px;
 }
-.card-main h1 {
+
+.card img:hover {
+  background-color: hsl(178, 100%, 50%);
+  background-image: url('./images/icon-view.svg');
+}
+
+.card-main h1 a {
   color: #fff;
   font-size: 22px;
   margin: 20px 0;
+  text-decoration: none;
 }
 
 .card-data {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px solid hsl(215, 32%, 27%);
+  width: inherit;
 }
 
 .price {
@@ -54,12 +64,26 @@ p {
   width: 10px;
 }
 
+.card-author {
+  width: inherit;
+  position: relative;
+}
+
 .card-author img {
   width: 32px;
   border: 1px solid #fff;
   border-radius: 50%;
+  margin-right: 12px;
+  position: absolute;
+  top: 16px;
 }
 
 .card-author p {
   display: inline-block;
+  margin-left: 50px;
+}
+
+.card-main h1 a:hover,
+a:hover {
+  color: hsl(178, 100%, 50%);
 }
