@@ -83,10 +83,22 @@ p,
 .price {
   color: hsl(178, 100%, 50%);
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .price img {
-  width: 10px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.days-left {
+  display: flex;
+  align-items: center;
+}
+.days-left img {
+  width: 16px;
+  margin-right: 7px;
 }
 
 .card-author {
@@ -111,13 +123,4 @@ p,
 .card-main h1 a:hover,
 a:hover {
   color: hsl(178, 100%, 50%);
-}
-
-.attribution {
-  margin: 30px 0;
-  color: hsl(215, 32%, 27%);
-}
-
-.attribution a {
-  color: hsl(215, 32%, 27%);
 }
